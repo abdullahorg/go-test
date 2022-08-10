@@ -4,6 +4,8 @@ FROM golang:1.17-buster AS builder
 WORKDIR /app
 # Copy over all go config (go.mod, go.sum etc.)
 COPY go.* ./
+#Copy Config file
+COPY config ./
 # Install any required modules
 RUN go mod download
 # Copy over Go source code
