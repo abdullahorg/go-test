@@ -7,6 +7,20 @@ import (
     "runtime"
 )
 
+func handler(w http.ResponseWriter, r *http.Request) {
+	query := r.URL.Query()
+	name := query.Get("name")
+	log.Printf("Received request for %s\n", name)
+	w.Write([]byte(CreateGreeting(name)))
+}
+
+func CreateGreeting(name string) string {
+	if name == "" {
+		name = "Guest"
+	}
+	return "Hello changed test, " + name + "\n"
+}
+
 func main() {
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request){
         hello := "Hello from Amnic!!"
