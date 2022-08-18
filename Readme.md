@@ -19,6 +19,10 @@ following are different scenarios of go application tested on amnic platform.
 
 ![Screenshot](/Tested-Screenshots/Go-1.17-no-config-secret.png?raw=true)
 
+## Test Case and Code Coverage
+
+![Screenshot](/Tested-Screenshots/Go-test-case-code-coverage.png)
+
 ## Docker Build and Run Commands
 
 ```docker build -t <image_name> . ```
