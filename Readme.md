@@ -21,7 +21,7 @@ following are different scenarios of go application tested on amnic platform.
 
 ## Test Case and Code Coverage
 
-![Screenshot](/Tested-Screenshots/Go-test-case-code-coverage.png)
+![Screenshot](/Tested-Screenshots/Go-test-case-code-coverage-main.png)
 
 ## Docker Build and Run Commands
 
